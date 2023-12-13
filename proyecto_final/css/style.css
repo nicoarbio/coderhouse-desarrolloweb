@@ -1,0 +1,117 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 
+    
+    */
+    font-family: sans-serif;
+
+    
+    /* https://coolors.co/00072b-1106f4-91b9f2-dde1fc-95989e-020202 */
+    --azul-oscuro: #00072B;
+    --azul: #1106F4;
+    --gris-azulado: #91B9F2;
+    --gris-claro: #DDE1FC;
+    --gris-oscuro: #95989E;
+    --oscuro: #020202;
+}
+
+.nav-bar-list {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Body style */
+.body-grid-rows {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: Impact;
+    font-size: 2.4rem;
+}
+
+.subtitle {
+    font-family: Tahoma;
+    margin-top: 1rem;
+}
+
+/* Header styles */
+header {
+    background-color: var(--azul-oscuro);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+    /* Footer style infiltrado */
+header *, footer * {
+    font-family: Helvetica Bold;
+    font-size: 1.2rem;
+}
+
+header h3 * {
+    font-size: 1.6rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Main style */
+main {
+    background-color: var(--gris-oscuro);
+    color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main.landing {
+    flex-direction: row;
+}
+
+/* Hero style */
+.hero-image {
+    width: 450px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--azul-oscuro);
+    border: 1px solid var(--azul-oscuro);
+    padding: .5rem 1rem;
+    border-radius: 10rem;
+}
+
+/* Footer style */
+footer {
+    background-color: var(--gris-azulado);
+    color: var(--oscuro);
+    padding: 1rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon-red-social { 
+    font-size: 2rem;
+}
