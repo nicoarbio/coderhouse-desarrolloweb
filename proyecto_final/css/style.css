@@ -1,13 +1,21 @@
+/* Fonts */
+@font-face {
+    font-family: Impact;
+    src: url(../fonts/impact.ttf);
+}
+@font-face {
+    font-family: Tahoma;
+    src: url(../fonts/tahoma.ttf);
+}
+@font-face {
+    font-family: "Helvetica Bold";
+    src: url(../fonts/Helvetica-Bold-Font.ttf);
+} 
+
 /* General style */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* 
-    
-    */
-    font-family: sans-serif;
-
     
     /* https://coolors.co/00072b-1106f4-91b9f2-dde1fc-95989e-020202 */
     --azul-oscuro: #00072B;
@@ -29,7 +37,7 @@ a {
 
 
 /* Body style */
-.body-grid-rows {
+.contenedor {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -42,19 +50,26 @@ a {
 
 .subtitle {
     font-family: Tahoma;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
+
 /* Header styles */
-header {
+nav {
+    background-color: var(--azul-oscuro);
+    color: white;
+}
+
+/* header {
     background-color: var(--azul-oscuro);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
     align-items: center;
     padding: 1rem 4rem;
-}
+} */
 
     /* Footer style infiltrado */
 header *, footer * {
@@ -66,10 +81,11 @@ header h3 * {
     font-size: 1.6rem;
 }
 
-header nav ul {
+/* header nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-}
+} */
 
 /* Main style */
 main {
@@ -79,25 +95,50 @@ main {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-main.landing {
-    flex-direction: row;
+@media (min-width: 992px) {
+    main {
+        justify-content: center;
+    }
+    main.landing {
+        flex-direction: row;
+    }
 }
 
 /* Hero style */
 .hero-image {
-    width: 450px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+        padding-top: 0px;
+        width: 450px;
+    }
 }
 
 .hero-button {
     display: inline-block;
-    margin-top: 1rem;
+    padding-top: 1rem;
     color: var(--azul-oscuro);
     border: 1px solid var(--azul-oscuro);
     padding: .5rem 1rem;
     border-radius: 10rem;
+}
+
+main iframe {
+    width: 100%;
+    height: 350px;
+}
+@media (min-width: 992px) {
+    main iframe {
+        width: 50%;
+        height: 540px;
+    }    
 }
 
 /* Footer style */

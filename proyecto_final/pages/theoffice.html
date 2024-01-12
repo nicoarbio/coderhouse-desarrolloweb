@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../lib/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../lib/coreui-icons-2/css/all.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-icons-1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>The Office US | Dunder Mifflin</title>
 </head>
 <body>
-    <div class="body-grid-rows">
+    <div class="contenedor">
         <header>
-            <h3><a href="../index.html">DUNDER MIFFLIN INC</a></h3>
-            <nav>
-                <ul class="nav-bar-list">
-                    <li><a href="./products.html">Productos</a></li>
-                    <li><a href="./about.html">Sobre nosotros</a></li>
-                    <li><a href="./contact-us.html">Contacto</a></li>
-                    <li><a href="./theoffice.html">The Office (US)</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="../index.html">DUNDER MIFFLIN INC</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./products.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./about.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./contact-us.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./theoffice.html">The Office (US)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
             <h1>The Office US | Dunder Mifflin</h1>
             <p>Información sobre la serie y la producción</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TVQgSIlN4no?si=aHLwcoJjFiUk7-I_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/TVQgSIlN4no?si=aHLwcoJjFiUk7-I_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </main>
         <footer>
             <p>Síguenos en nuestras redes sociales</p>
@@ -33,5 +49,6 @@
             <a href="https://www.netflix.com/title/70136120" target="_blank"><i class="icon-red-social cib-netflix"></i></a>
         </footer>
     </div>
+    <script src="../lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
