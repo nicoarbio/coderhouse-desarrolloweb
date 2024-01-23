@@ -152,6 +152,16 @@ main iframe {
     margin-bottom: 20px;
 }
 
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-contacto {
+    background-color: #007bff;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
 /* Footer style */
 footer {
     background-color: var(--gris-azulado);
