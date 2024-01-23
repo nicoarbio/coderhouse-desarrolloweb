@@ -162,6 +162,19 @@ main iframe {
     margin-bottom: 30px;
 }
 
+.empleado-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.edificio-img {
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
 /* Footer style */
 footer {
     background-color: var(--gris-azulado);
