@@ -1,0 +1,16 @@
+/* Footer style */
+footer {
+    font-family: Helvetica Bold;
+    font-size: 1.2rem;
+    background-color: $gris-azulado;
+    color: $oscuro;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .icon-red-social {
+        font-size: 2rem;
+    }
+}

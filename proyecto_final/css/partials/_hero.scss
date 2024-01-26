@@ -1,0 +1,19 @@
+/* Hero style */
+.hero-image {
+    padding-top: 5px;
+    width: 100%;
+
+    @media (min-width: 992px) {
+        padding-top: 0px;
+        width: 450px;
+    }
+}
+
+.hero-button {
+    display: inline-block;
+    padding-top: 1rem;
+    color: $azul-oscuro;
+    border: 1px solid $azul-oscuro;
+    padding: .5rem 1rem;
+    border-radius: 10rem;
+}
