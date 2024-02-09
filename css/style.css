@@ -153,10 +153,9 @@ footer .icon-red-social {
 }
 
 .edificio-img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   margin: 20px auto;
-  display: block;
 }
 
 .form-group {
