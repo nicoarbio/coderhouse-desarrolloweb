@@ -79,6 +79,11 @@ main {
   }
 }
 
+.hide-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 /* Footer style */
 footer {
   font-family: Helvetica Bold;
